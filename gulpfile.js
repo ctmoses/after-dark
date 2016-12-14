@@ -4,12 +4,12 @@ var gutil			= require('gulp-util');
 var sass      = require('gulp-sass');
 var webpack   = require('webpack-stream');
 
-let reactFiles = ['src/app.js','src/routes.js','src/rootReducer.js', 'src/index.js', 'src/features/**/*.js'];
+let reactFiles = ['src/app.js','src/routes.js','src/rootReducer.js', 'src/index.js', 'src/features/**/*.js', 'src/layouts/**/*.js'];
 
 gulp.task('sass', function () {
-  gulp.src('client/public/style/*.scss')
+  gulp.src('src/public/style/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('client/public/dist/'));
+    .pipe(gulp.dest('src/public/dist/'));
 });
 
 gulp.task('webpack', function() {

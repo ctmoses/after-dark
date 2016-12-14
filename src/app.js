@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import features from './features';
+import Layouts from './layouts';
+import MainLayout from './layouts/mainLayout'
 
 export default class App extends Component {
-  render() {
-    return (
-      <div id="main">
-        <features.crimes.components.crimesList />
-      </div>
-    );
-  }
+	
+	render() {
+		console.log(Layouts)
+		return (
+			<div id="main">
+				<h4>Where's my layout?</h4>
+				<Layouts.MainLayout />
+			</div>
+		);
+	}
 }

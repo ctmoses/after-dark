@@ -1,3 +1,4 @@
+import crimesLayout from './crimesLayout';
 import crimesList from './crimesList';
 
-export { crimesList };
+export { crimesLayout, crimesList };
